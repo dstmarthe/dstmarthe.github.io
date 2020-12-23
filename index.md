@@ -1,21 +1,3 @@
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" /> <!--Bulma CSS Framework--> 
-		<script
-			defer
-			src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
-		></script>
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
-			rel="stylesheet"
-		/>
-		<title>Dale's Portfolio Page</title>
-	</head>
-</html >
 <body class="has-navbar-fixed-top">
 	<nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
