@@ -21,20 +21,22 @@
 <body class="has-navbar-fixed-top">
 	<nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
-			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+
+			<a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
 			<span aria-hidden="true"></span>
 			<span aria-hidden="true"></span>
 			<span aria-hidden="true"></span>
 		  </a>
 		</div>
-		<div class="navbar-menu">
-			<div class="navbar-start">
-			<a class="navbar-item has-text-white" href="#projectSection">
+		<div class="navbar-menu" id="navMenu">
+			<div class="navbar-start"></div>
+				<div class="navbar-end">
+			<a class="navbar-item" href="#projectSection">
 				Projects
 			  </a>
 			
 			  <div class="navbar-item has-dropdown is-hoverable">
-				<a class="navbar-link has-text-white">
+				<a class="navbar-link">
 				  Social
 				</a>
 			  
@@ -51,30 +53,26 @@
 				</div>
 			  </div>
 			</div>
-			<div class="navbar-end">
 				</div>
-		  </div>
 	  </nav>
 	<main id="main">
 		<!--Medium sized transparent hero -->
 		<section class="hero is-medium has-navbar-fixed-top">
 			<div class="hero-body">
 			  <div class="container has-text-centered">
-				<h1 class="title has-text-white">
+				<h1 class="title has-text-light">
 				  Hi, I'm Dale
 				</h1>
-				<h2 class="subtitle has-text-white">
+				<h2 class="subtitle has-text-light">
 				  Front End Web Developer
 				</h2>
 				
 				<p id="skills">
 					<img src="brace.svg" alt="" id="braces" />
-					<img src="icons8-css3.svg" alt="" class="langIcon" />
-					<img src="icons8-html-5.svg" alt="" class="langIcon" />
-					<img src="icons8-javascript.svg" alt="" class="langIcon" />
-					<img src="icons8-python.svg" alt="" class="langIcon" />
-					<img src="" alt="" class="langIcon" />
-					<img src="" alt="" class="langIcon" />
+					<img src="icons8-css3.svg" alt="css" class="langIcon" />
+					<img src="icons8-html-5.svg" alt="html5" class="langIcon" />
+					<img src="icons8-javascript.svg" alt="javascript" class="langIcon" />
+					<img src="icons8-python.svg" alt="python" class="langIcon" />
 					<img src="brace.svg" alt="" id="bracesleft" />
 				</p>
 			</section>	
@@ -114,7 +112,7 @@
 		  </p>
 		</div>
 	  </footer>
-	   <!--Needed for paint and Bulnma-->
+	   <!--Needed for paint and Bulma-->
 	<script src="https://unpkg.com/css-paint-polyfill"></script>
 	<script src="bScript.js" type="text/javascript"></script>
 	

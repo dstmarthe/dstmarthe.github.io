@@ -27,7 +27,7 @@ body {
 }
 #skills {
 	margin: auto;
-	width: max-content;
+	width: 50vw;
 }
 #skills img {
 	margin: 0 0 0 -3px;
