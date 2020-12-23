@@ -65,7 +65,7 @@
 	<footer class="footer">
 		<div class="content has-text-centered">
 		  <p>
-			There will be legal things here soon.
+			© 2020 by Dale St. Marthe. All rights reserved.
 		  </p>
 		</div>
 	  </footer>

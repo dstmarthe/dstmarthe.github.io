@@ -22,8 +22,8 @@ const colorPallete = [
 	"#fd2eb3",
 ];
 window.onload = function () {
-	document.querySelector("main").style.setProperty("--bytemare-color", color1);
-	const color1 = colorPalette[Math.floor(Math.random() * colorPalette.length)];
+	const color1 = colorPalette[Math.floor(Math.random() * colorPalette.length)];document.querySelector("main").style.setProperty("--bytemare-color", color1);
+	
 };
 
 function hover(element, enter, leave) {
