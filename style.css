@@ -14,7 +14,7 @@ body {
 	/* background-color: #d0e8f2; */
 }
 
-main {
+#main {
 	--static-gradient-direction: to-top;   
 	--static-gradient-color: #a7c5eb;
 	--static-gradient-size: 8;
@@ -25,11 +25,9 @@ main {
 	--bytemare-probability: 0.3;
 	background: paint(bytemare);
 }
-
 #skills {
 	margin: auto;
 	width: max-content;
-	font-size: 1.5rem;
 }
 #skills img {
 	margin: 0 0 0 -3px;

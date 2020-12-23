@@ -1,4 +1,22 @@
 /* global registerPaint */
+const colorPalette = [
+	"#735cdd",
+	"#ffbcbc",
+	"#b7efcd",
+	"#583d72",
+	"#65d6ce",
+	"#949cdf",
+	"#9399ff",
+	"#158467",
+	"#2d6187",
+	"#bedcfa",
+	"#ffe5b9",
+];
+const color1 = colorPalette[Math.floor(Math.random() * colorPalette.length)];
+console.log(color1);
+
+
+
 
 if (typeof registerPaint !== "undefined") {
   registerPaint("bytemare", class {
@@ -15,7 +33,8 @@ if (typeof registerPaint !== "undefined") {
       const radians = (Math.PI / 180) * 45;
       const tileSize = parseInt(properties.get("--bytemare-tile-size")) || 16;
       const gap = parseInt(properties.get("--bytemare-gap")) || 1;
-      const color = properties.get("--bytemare-color").toString().trim() || "#735cdd";
+      const color = color1;
+      //properties.get("--bytemare-color").toString().trim() || "#735cdd";
       const darker = this.darkenColor(color, 20);
       const darkest = this.darkenColor(color, 40);
       const probability = parseFloat(properties.get("--bytemare-probability")) || 0.375;
