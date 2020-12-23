@@ -1,7 +1,7 @@
 const domContainer = document.querySelector("#projInfo");
 var linkList = document.querySelectorAll(".project-tile");
 const searchQueryURL = "https://api.github.com/users/dstmarthe/repos";
-domContainer.innerHTML = "";
+domContainer.innerHTML = "Mouse over a projext to see a description, then click to visit each site.";
 CSS.paintWorklet.addModule("houdini-static-gradient/worklet.js");
 CSS.paintWorklet.addModule("bytemare/bytemare.js");
 
