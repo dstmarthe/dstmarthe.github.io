@@ -1,7 +1,8 @@
 const domContainer = document.querySelector("#projInfo");
 var linkList = document.querySelectorAll(".project-tile");
 const searchQueryURL = "https://api.github.com/users/dstmarthe/repos";
-domContainer.innerHTML = "Mouse over a projext to see a description, then click to visit each site.";
+domContainer.innerHTML =
+	"Mouse over a project to see a description, then click to visit each site.";
 CSS.paintWorklet.addModule("houdini-static-gradient/worklet.js");
 CSS.paintWorklet.addModule("bytemare/bytemare.js");
 
@@ -37,7 +38,10 @@ async function getRepo(num) {
 		.then((response) => {
 			console.log(response[num].name);
 			//returm name and description of repo by index
-			domContainer.innerHTML = `<em>Name:</em> ${response[num].name.replace("-", " ")}
+			domContainer.innerHTML = `<em>Name:</em> ${response[num].name.replace(
+				"-",
+				" "
+			)}
 			\<br/ > <br/ > <em>Description:</em> ${response[num].description}`;
 		})
 		.catch((err) => console.log(err));
