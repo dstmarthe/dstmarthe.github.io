@@ -61,30 +61,6 @@
 			</div>
 		  </section>
 	
-		<section id="projectSection">
-			<div class="infocontainer">
-				<img src="pixels.png" alt="pixel art of computer monitor" id="computer">
-				<div id="projInfo" class="top-left"></div>
-			</div>
-			<div id="projects">
-				<h2>PROJECTS</h2>
-				<div class="project-tile" onmouseover="changeNode(2)"><a href="https://github.com/dstmarthe/Portfolio-Page" class="project-link">Portfolio Page (this site)</a></div>
-				<div class="project-tile" onmouseover="changeNode(0)"><a href="https://codepen.io/dstmarthe/full/yLJwGRP" class="project-link">Javascript Technical Document</a></div>
-				<div class="project-tile" onmouseover="changeNode(3)"><a href="https://codepen.io/dstmarthe/full/KKMJEGM" class="project-link">Product Landing Page</a></div>
-				<div class="project-tile" onmouseover="changeNode(4)"><a href="https://codepen.io/dstmarthe/full/pobOmaN" class="project-link">Survery Form</a></div>
-				<div class="project-tile" onmouseover="changeNode(1)"><a href="https://codepen.io/dstmarthe/full/jOrKKRz" class="project-link">Tribute Page</a></div>
-				
-				
-				
-				<a
-					id="profile-link"
-					href="https://github.com/dstmarthe"
-					id="more-link"
-					target="_blank"
-					>See More of My Work!</a
-				>
-			</div>
-		</section>
 	</main>
 	<footer class="footer">
 		<div class="content has-text-centered">
