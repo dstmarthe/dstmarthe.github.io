@@ -1,23 +1,18 @@
-/* global registerPaint */
+//code for random bg
 const colorPalette = [
 	"#735cdd",
-	"#ffbcbc",
 	"#b7efcd",
 	"#583d72",
 	"#65d6ce",
 	"#949cdf",
 	"#9399ff",
 	"#158467",
-	"#2d6187",
 	"#bedcfa",
 	"#ffe5b9",
 ];
 const color1 = colorPalette[Math.floor(Math.random() * colorPalette.length)];
-console.log(color1);
 
-
-
-
+/* global registerPaint */
 if (typeof registerPaint !== "undefined") {
   registerPaint("bytemare", class {
     static get inputProperties () {
