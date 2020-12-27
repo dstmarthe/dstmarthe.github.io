@@ -52,6 +52,10 @@ body {
 	padding: 0;
 }
 }
+h1, h2 {
+	background-color: rgba(00, 00, 00, .08);
+	border-radius: 9px;
+}
 .infocontainer {
 	position: relative;
 	margin: 20% auto 0;
