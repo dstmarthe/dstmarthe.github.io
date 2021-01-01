@@ -63,11 +63,11 @@
 	<footer class="footer">
 		<div class="content has-text-centered">
 		  <p>
-			© 2020 by Dale St. Marthe. All rights reserved.
+			© 2021 by Dale St. Marthe. All rights reserved.
 		  </p>
 		</div>
 	  </footer>
-	   <!--Needed for paint and Bulnma-->
+	   <!--Needed for paint and Bulma-->
 	<script src="https://unpkg.com/css-paint-polyfill"></script>
 	<script src="bScript.js" type="text/javascript"></script>
 </body>
