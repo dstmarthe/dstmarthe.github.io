@@ -1,22 +1,25 @@
+
 const domContainer = document.querySelector("#projInfo");
 var linkList = document.querySelectorAll(".project-tile");
 const searchQueryURL = "https://api.github.com/users/dstmarthe/repos";
 domContainer.innerHTML =
 	"Mouse over a project to see a description, then click to visit each site.";
+//Paint Worklets from Houdini, only bytemare is in use
 CSS.paintWorklet.addModule("houdini-static-gradient/worklet.js");
 CSS.paintWorklet.addModule("bytemare/bytemare.js");
 
+//Hover function for each project link
 function hover(element, enter, leave) {
 	element.forEach((link) => link.addEventListener("mouseenter", enter));
 	element.forEach((link) => link.addEventListener("mouseleave", leave));
 }
 
 async function getRepo(num) {
-	//get repo info by index
+	//Get repo info by index
 	fetch(searchQueryURL)
 		.then((result) => result.json())
 		.then((response) => {
-			//returm name and description of repo by index
+			//Returm name and description of repo by index
 			domContainer.innerHTML = `<em>Name:</em> ${response[num].name.replace(
 				"-",
 				" "
@@ -26,12 +29,13 @@ async function getRepo(num) {
 		.catch((err) => console.log(err));
 }
 
+//node takes number from function call in html
 var node;
 function changeNode(num) {
-	node = +num;
+	node =+num;
 }
+
 hover(
-	//call Hover function
 	linkList,
 	(e) => {
 		// On hover
