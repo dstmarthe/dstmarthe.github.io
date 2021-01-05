@@ -14,6 +14,16 @@ function hover(element, enter, leave) {
 	element.forEach((link) => link.addEventListener("mouseleave", leave));
 }
 
+
+function toggle_visibility(el) {
+	infoPara = document.createElement("p")
+	infoPara.id = "mblInfo"
+	if 
+
+	else {
+	el.appendChild(infoPara)}
+}
+
 async function getRepo(num) {
 	//Get repo info by index
 	fetch(searchQueryURL)
@@ -32,7 +42,7 @@ async function getRepo(num) {
 //node takes number from function call in html
 var node;
 function changeNode(num) {
-	node =+num;
+	node=+num;
 }
 
 hover(
@@ -69,5 +79,4 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	  });
 	}
-  
   });
