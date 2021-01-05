@@ -18,7 +18,7 @@ function hover(element, enter, leave) {
 function toggle_visibility(el) {
 	infoPara = document.createElement("p")
 	infoPara.id = "mblInfo"
-	if 
+	if (this){}
 
 	else {
 	el.appendChild(infoPara)}
