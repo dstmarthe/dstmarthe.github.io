@@ -13,16 +13,19 @@ function hover(element, enter, leave) {
 	element.forEach((link) => link.addEventListener("mouseenter", enter));
 	element.forEach((link) => link.addEventListener("mouseleave", leave));
 }
+//added click function skeleton
+// function mobileClick(element, toggle_visibility(this)) {
+// 	element.forEach((link) => link.addEventListener("click", enter));
+// }
 
+// function toggle_visibility(el) {
+// 	infoPara = document.createElement("p")
+// 	infoPara.id = "mblInfo"
+// 	if (this){}
 
-function toggle_visibility(el) {
-	infoPara = document.createElement("p")
-	infoPara.id = "mblInfo"
-	if (this){}
-
-	else {
-	el.appendChild(infoPara)}
-}
+// 	else {
+// 	el.insertAdjacentElement("afterend",infoPara)}
+// }
 
 async function getRepo(num) {
 	//Get repo info by index
