@@ -2,6 +2,7 @@ const domContainer = document.querySelector("#projInfo");
 const linkList = document.querySelectorAll(".project-tile");
 var infoPara = document.createElement("p")
 infoPara.id = "mblInfo";
+infoPara.display = "none"
 const searchQueryURL = "https://api.github.com/users/dstmarthe/repos";
 domContainer.innerHTML =
 	"Mouse over a project to see a description, then click to visit each site.";
@@ -20,13 +21,16 @@ function changeNode(num) {
 	node=+num;
 }
 //Toggle repo information for mobile
-var v = function toggle_visibility() {
+const v = function toggle_visibility() {
 	//If there is more than one p child delete inforPara, else add it
 	if (this.querySelectorAll("p").length >= 1){
 	infoPara.remove();
+	infoPara.style.display = "none"
 	} else {
 	this.append(infoPara)}
 	getRepo(node, infoPara)
+	infoPara.style.display = "block"
+	
 }
 
 //Add event listeners to the project tiles, triggering toggle_visibility
