@@ -27,7 +27,7 @@ body {
 }
 #skills {
 	margin: auto;
-	width: 50vw;
+	width: 55vw;
 }
 #skills img {
 	margin: 0 0 0 -3px;
@@ -41,10 +41,10 @@ body {
 	margin-left: -35px;
 }
 .langIcon {
-	width: 10%;
+	width: 9%;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 760px) {
 #projectSection {
 	display: grid;
 	grid-template-columns: 2fr 2fr;
@@ -53,19 +53,22 @@ body {
 }
 
 #projInfo {
-	width: 39.4vw;
+	width: 39.5vw;
 	height: 17vw;
 	color: #39ff14;
 	background-color: black;
 	margin: 0;
 	padding: 5px;
-	line-height: 1.4rem;
+	line-height: 1.5rem;
 }
 
 }
-h1, h2 {
-	background-color: rgba(00, 00, 00, .08);
+#title, #sub {
+	background-color: black;
+	/* background-color: rgba(00, 00, 00, .1); */
 	border-radius: 9px;
+	width: max-content;
+	display: inline-block;
 }
 .infocontainer {
 	position: relative;
@@ -96,7 +99,7 @@ h1, h2 {
 	z-index: 1;
 }
 .project-tile {
-	height: 90px;
+	height: 85px;
 	border: 2px solid #52575d;
 	border-radius: 15px 15px 35px 35px;
 	margin: 2px 0;
@@ -105,16 +108,47 @@ h1, h2 {
 }
 
 .project-link {
-	display: block;
+	display: inline-block;
 	width: 90%;
-	height: 90%;
-	margin: 3.8% 0 0 3%;
+	height: 45%;
+	margin: 4% 0 0 3%;
 	background: url(method-draw-image.svg) no-repeat;
 	background-size: contain;
+	padding-top: 3px;
+	padding-bottom: -2px;
+	color: silver;
 }
 #profile-link {
 	text-decoration: none;
 	color: #52575d;
 	margin-top: 2px;
 	text-align: right;
+}
+
+@media screen and (max-width: 760px) {
+#mblInfo {
+	position: relative;
+	font-size: .75rem;
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	width: 80%;
+	background-color: white;
+	height: max-content;
+	transition: ease 220ms;
+	z-index: 2;
+}
+
+.infocontainer {
+	display: none;
+}
+
+#braces {
+	height: 2rem;
+}
+#bracesleft {
+	transform: rotate(180deg);
+	height: 2rem;
+	margin-left: -35px;
+}
 }
