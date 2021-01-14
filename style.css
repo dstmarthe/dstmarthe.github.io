@@ -1,8 +1,13 @@
 * {
 	box-sizing: border-box;
 }
-html {
+html:focus-within {
 	scroll-behavior: smooth;
+}
+@media(prefers-reduced-motion) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
 }
 body {
 	margin: 0;
