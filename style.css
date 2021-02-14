@@ -161,3 +161,12 @@ body {
     margin-left: -35px;
   }
 }
+
+.footer {
+  width: 100%;
+  max-height: 20%;
+  text-align: center;
+  color: #393e46;
+  font-size: small;
+  background-color: #222831;
+}
