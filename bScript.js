@@ -15,12 +15,7 @@ function hover(element, enter, leave) {
   element.forEach((link) => link.addEventListener("mouseenter", enter));
   element.forEach((link) => link.addEventListener("mouseleave", leave));
 }
-//node takes number from function call in html
-var node;
-function changeNode(e) {
-  node = e.id;
-  console.log(node);
-}
+
 //Toggle repo information for mobile
 const v = function toggle_visibility() {
   //If there is more than one p child delete inforPara, else add it
@@ -69,11 +64,17 @@ function mediaQ(x) {
     );
   }
 }
+
 //Keeps track of window size
 var x = window.matchMedia("(max-width: 760px)");
 mediaQ(x); // Call listener function at run time
 x.addEventListener("change", mediaQ); // Attach listener function on state changes
 
+//node takes number from function call in html
+var node;
+function changeNode(e) {
+  node = e.id;
+}
 //Get repo info by index
 async function getRepo(node, container) {
   fetch(searchQueryURL)
@@ -84,7 +85,6 @@ async function getRepo(node, container) {
           return index;
         }
       });
-
       //Returm name and description of repo by index
       container.innerHTML = `<p><u><em>Name:</em></u> ${response[
         index
