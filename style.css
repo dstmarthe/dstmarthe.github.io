@@ -31,68 +31,78 @@ body {
   background: paint(bytemare);
 }
 #skills {
-  margin: auto;
-  width: 53vh;
-}
-#skills img {
-  margin-left: -4px;
-}
-#braces {
-  height: 4rem;
-}
-#bracesleft {
-  transform: rotate(180deg);
-  height: 4rem;
-  margin-left: -33px;
-}
-.langIcon {
-  width: 9%;
-}
-
-@media screen and (min-width: 760px) {
-  #projectSection {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 80%;
-    padding: 0;
-  }
-  #skills img {
-    margin: 0 0 0 -3px;
-    width: 11%;
-  }
-  #projInfo {
-    width: 39.5vw;
-    height: 17vw;
-    color: #39ff14;
-    background-color: black;
-    margin: 0;
-    padding: 5px;
-    line-height: 1.5rem;
-  }
-}
-#title,
-#sub {
-  background-color: black;
-  /* background-color: rgba(00, 00, 00, .1); */
-  border-radius: 8px;
+  margin-left: -0.24vw;
+  margin-top: -15px;
+  margin-bottom: 10px;
   width: max-content;
   display: inline-block;
 }
+#braces {
+  height: 70px;
+  visibility: hidden;
+}
+#bracesright {
+  transform: rotate(180deg);
+  max-height: 70px;
+  visibility: hidden;
+}
+.langIcon {
+  width: 6vh;
+}
+
+/* Bigger screens*/
+@media screen and (min-width: 750px) {
+  #projectSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80%;
+    padding: 0;
+  }
+  #projInfo {
+    width: 37vw;
+    min-height: 27vh;
+    color: #39ff14;
+    background-color: black;
+    margin: 0;
+    padding: 6px;
+    line-height: 1.25rem;
+    border: #393e46 solid 9px;
+    font-size: 1rem;
+  }
+  .langIcon {
+    width: 6vh;
+  }
+  #glass {
+    width: 52vh;
+  }
+  #braces,
+  #bracesright {
+    height: 7vh;
+    visibility: visible;
+  }
+}
+
+#glass {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6px 30px 0 rgba(46, 48, 80, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  min-width: 9vw;
+  padding-top: 10px;
+}
+#title,
+#sub {
+  display: inline-block;
+}
+
 .infocontainer {
-  position: relative;
   margin: 20% auto 0;
-  padding: 0;
-  width: fit-content;
 }
 #computer {
   width: 40vw;
 }
-.top-left {
-  position: absolute;
-  top: 6px;
-  left: 4px;
-}
-
 #projects {
   display: grid;
   grid-template-columns: repeat(minmax(300px, 1fr));
@@ -136,7 +146,7 @@ body {
   text-align: right;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 750px) {
   #mblInfo {
     position: relative;
     font-size: 0.75rem;
@@ -158,15 +168,13 @@ body {
   #bracesleft {
     transform: rotate(180deg);
     height: 2rem;
-    margin-left: -35px;
   }
 }
 
 #footer {
   width: 100%;
-  max-height: 20%;
+  max-height: 22%;
   text-align: center;
   color: #393e46;
   font-size: small;
-  background-color: #222831;
 }
