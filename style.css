@@ -72,6 +72,9 @@ body {
   .langIcon {
     width: 6vh;
   }
+  #phpImg{
+    margin-bottom: 12px;
+  }
   #glass {
     width: 52vh;
   }
