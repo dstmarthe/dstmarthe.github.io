@@ -107,6 +107,20 @@ body {
 #computer {
 	width: 40vw;
 }
+
+.light {
+	width: 0.7rem;
+	height: 0.4rem;
+	background-color: lawngreen;
+	z-index: 10;
+	border: lawngreen outset 2px;
+	display: inline-flex;
+	flex-direction: row;
+	justify-self: flex-start;
+	position: absolute;
+	left: 12%;
+	margin-top: 0.65rem;
+}
 #projects {
 	display: grid;
 	grid-template-columns: repeat(minmax(300px, 1fr));
