@@ -119,14 +119,16 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 });
 
-blinkLight();
+window.addEventListener("load", blinkLight(), false);
 function blinkLight() {
+	//random integer determins which lights are selected to change
 	var randomInteger = (min, max) =>
 		Math.floor(Math.random() * (max - min + 1)) + min;
 	var randomBoolean = () => Math.random() >= 0.5;
 	var l1 = randomInteger(1, 5) - 1;
 	var l2 = randomInteger(1, 5) - 1;
 	var colors;
+	//Random boolean for color
 	if (randomBoolean()) {
 		colors = "lawngreen";
 	} else {
