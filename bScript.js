@@ -7,8 +7,7 @@ infoPara.display = "none";
 const searchQueryURL = "https://api.github.com/users/dstmarthe/repos";
 domContainer.innerHTML =
 	"Mouse over a project to see a description, then click to visit each site.";
-//Paint Worklets from Houdini, only bytemare is in use
-CSS.paintWorklet.addModule("houdini-static-gradient/worklet.js");
+//Paint Worklet from Houdini
 CSS.paintWorklet.addModule("bytemare/bytemare.js");
 
 //Hover function for each project link
@@ -119,9 +118,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 });
 
-window.addEventListener("load", blinkLight(), false);
 function blinkLight() {
-	//random integer determins which lights are selected to change
+	//Random integer determines which lights are selected to change
 	var randomInteger = (min, max) =>
 		Math.floor(Math.random() * (max - min + 1)) + min;
 	var randomBoolean = () => Math.random() >= 0.5;
@@ -141,3 +139,4 @@ function blinkLight() {
 	randomBoolean();
 	setInterval(() => blinkLight(), randomInteger(4, 10) * 100);
 }
+window.addEventListener("load", blinkLight());

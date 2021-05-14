@@ -1,2 +1,0 @@
-# houdini-static-gradient
- 

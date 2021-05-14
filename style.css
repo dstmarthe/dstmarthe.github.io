@@ -182,7 +182,7 @@ body {
 		width: 80%;
 		background-color: white;
 		transition: ease-in-out;
-		z-index: 2;
+		z-index: 11;
 	}
 
 	.infocontainer {
