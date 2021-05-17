@@ -23,10 +23,6 @@ body {
 #main {
 	margin: 0;
 	width: 100%;
-	--static-gradient-direction: to-top;
-	--static-gradient-color: #a7c5eb;
-	--static-gradient-size: 8;
-	/* background: paint(static-gradient), #949cdf; */
 	--bytemare-tile-size: 20;
 	--bytemare-gap: 1;
 	/* --bytemare-color: #949cdf; */
