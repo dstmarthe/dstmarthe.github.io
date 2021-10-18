@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function blinkLight() {
 	//Random integer determines which lights are selected to change
+	
 	var randomInteger = (min, max) =>
 		Math.floor(Math.random() * (max - min + 1)) + min;
 	var randomBoolean = () => Math.random() >= 0.5;
