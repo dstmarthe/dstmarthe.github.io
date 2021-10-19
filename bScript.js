@@ -56,9 +56,16 @@ function mediaQ(x) {
 			(e) => {
 				// On hover
 				getRepo(node, domContainer);
+				//Change background
+				if (node != "dstmarthe.github.io") {
+					document.querySelector(
+						"main"
+					).style.background = `url("images/${node}.png") no-repeat top center`;
+				}
 			},
 			(e) => {
 				// On exit hover
+				document.querySelector("main").style.background = "paint(bytemare)";
 				domContainer.innerHTML = "";
 			}
 		);
@@ -120,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function blinkLight() {
 	//Random integer determines which lights are selected to change
-	
+
 	var randomInteger = (min, max) =>
 		Math.floor(Math.random() * (max - min + 1)) + min;
 	var randomBoolean = () => Math.random() >= 0.5;
@@ -138,6 +145,6 @@ function blinkLight() {
 	light[l2].style.backgroundColor = colors;
 	light[l2].style.borderColor = colors;
 	randomBoolean();
-	setInterval(() => blinkLight(), randomInteger(4, 10) * 100);
+	setInterval(() => blinkLight(), randomInteger(4, 10) * 500);
 }
 window.addEventListener("load", blinkLight());
