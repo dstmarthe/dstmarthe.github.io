@@ -60,7 +60,7 @@ function mediaQ(x) {
 				if (node != "dstmarthe.github.io") {
 					document.querySelector(
 						"main"
-					).style.background = `url("images/${node}.png") no-repeat top center`;
+					).style.background = `url("images/${node}.png") no-repeat top`;
 				}
 			},
 			(e) => {
