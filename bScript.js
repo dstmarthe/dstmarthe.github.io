@@ -66,7 +66,8 @@ function mediaQ(x) {
 			(e) => {
 				// On exit hover
 				document.querySelector("main").style.background = "paint(bytemare)";
-				domContainer.innerHTML = "";
+				domContainer.innerHTML =
+					"Mouse over a project to see a description, then click to visit each site.";
 			}
 		);
 	}
