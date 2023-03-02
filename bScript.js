@@ -146,6 +146,5 @@ function blinkLight() {
 	light[l2].style.backgroundColor = colors;
 	light[l2].style.borderColor = colors;
 	randomBoolean();
-	setInterval(() => blinkLight(), randomInteger(4, 10) * 500);
 }
 window.addEventListener("load", blinkLight());
