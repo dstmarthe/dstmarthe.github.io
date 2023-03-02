@@ -63,7 +63,7 @@
 	<footer class="footer">
 		<div class="content has-text-centered">
 		  <p>
-			© 2021 by Dale St. Marthe. All rights reserved.
+			© 2023 by Dale St. Marthe. All rights reserved.
 		  </p>
 		</div>
 	  </footer>
