@@ -27,7 +27,9 @@ body {
 	/* background-color: #d0e8f2; */
 }
 
-
+navbar {
+	height: var(--bulma-navbar-height);
+}
 #main {
 	margin: 0;
 	width: 100%;
