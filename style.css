@@ -32,11 +32,11 @@ body {
 #main {
 	margin: 0;
 	width: 100%;
-	--bytemare-tile-size: 20;
+	/*--bytemare-tile-size: 20;
 	--bytemare-gap: 1;
-	/* --bytemare-color: #949cdf; */
+	 --bytemare-color: #949cdf; 
 	--bytemare-probability: 0.3;
-	background: paint(bytemare);
+	background: paint(bytemare);*/
 }
 #skills {
 	margin-left: -0.24vw;
