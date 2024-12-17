@@ -43,7 +43,7 @@ nav {
 }
 
 
-#footer {
+footer {
 	width: 100%;
 	max-height: 2rem;
 	text-align: center;
@@ -53,7 +53,7 @@ nav {
 /* Mobile Screens */
 @media screen and (max-width: 750px) {
 
-#footer {
+footer {
 	width: 100%;
 	max-height: 22%;
 	text-align: center;
