@@ -5,6 +5,7 @@
 
 :root {
 	--bulma-navbar-height: 1.5rem;
+	--is-link: #0000FF;
 }
 
 html:focus-within {
@@ -22,13 +23,12 @@ body {
 	-ms-grid-rows: auto 1fr auto;
 	grid-template-rows: auto 1fr auto;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-	background-color: #808080;
 	/* background-color: #d0e8f2; */
 }
 
 nav {
 	height: var(--bulma-navbar-height);
-	background-color: #0000FF;
+	background-color: var(--is-link);
 	color: azure;
 }
 #main {
