@@ -4,7 +4,7 @@
 }
 
 :root {
-	--bulma-navbar-height: 2rem;
+	--bulma-navbar-height: 1.5rem;
 }
 
 html:focus-within {
@@ -40,6 +40,14 @@ nav {
 #title,
 #sub {
 	display: inline-block;
+}
+
+
+#footer {
+	width: 100%;
+	max-height: 2rem;
+	text-align: center;
+	font-size: small;
 }
 
 /* Mobile Screens */
