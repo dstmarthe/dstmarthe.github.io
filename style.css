@@ -31,7 +31,7 @@ body {
 	background-color: var(--is-link);
 	color: azure;
 }
-#main {
+main {
 	margin: 0;
 	width: 100%;
 }
